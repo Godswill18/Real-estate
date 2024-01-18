@@ -1,0 +1,10 @@
+/admin
+Username: admin
+Password: admin
+
+
+
+
+/login
+username: christine@mail.com
+password: agent

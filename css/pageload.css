@@ -1,0 +1,16 @@
+#preloader{
+    background: rgb(255, 255, 255) url(../images/loader.gif) no-repeat center center !important;
+    background-size: 20% !important;
+    height: 100vh !important;
+    width: 100% !important;
+    position: fixed !important;
+    z-index: 1000 !important;
+}
+
+@media (max-width: 767px) {
+    #preloader {
+        background-size: 100% !important; /* Adjust background size for smaller screens */
+        /* Add any other mobile-specific styles here */
+
+    }
+}

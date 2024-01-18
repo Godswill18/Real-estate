@@ -1,0 +1,87 @@
+
+body {
+    overflow-x: hidden;
+}
+
+div .aniG {
+    opacity: 0;
+    filter: blur(10px);
+    transition: 1s;
+}
+
+div.show-animate .aniG {
+    opacity: 100;
+    filter: blur(0);
+   
+}
+
+
+.sec-1 .aniG{
+    transform: translateX(-100%);
+}
+
+.sec-1.show-animate .aniG{
+    transform: translateX(0);
+}
+
+
+
+
+.sec-3 .aniG{
+    transform: scale(.9);
+}
+
+.sec-3.show-animate .aniG{
+    transform: scale(1.1);
+}
+
+
+
+.sec-4 .aniG{
+    transform: translateX(100%);
+}
+
+.sec-4.show-animate .aniG{
+    transform: translateX(0);
+}
+
+
+.sec-x .aniG{
+    transform: translateX(30%);
+}
+
+.sec-x.show-animate .aniG{
+    transform: translateX(0);
+}
+
+.sec-7 .images img {
+    max-width: 400px ;
+    margin: 0 30px;
+    transform: translateX(0);
+    transition-delay: calc(.2s * var(--i));
+}
+ 
+.sec-7.show-animate .images img{
+    transform: translateX(-100%);
+     
+}
+
+
+/* Mobile view styles */
+@media only screen and (max-width: 767px) {
+    *{
+
+        overflow-x: hidden;
+    }
+    .sec-7 .images img {
+        max-width: 100%; /* Set max-width to 100% for smaller screens */
+        margin: 0 15px; /* Adjust margin for smaller screens */
+        transform: translateX(0); /* Reset transform for smaller screens */
+        transition-delay: calc(.5s * var(--i)); /* Reset transition delay for smaller screens */
+    }
+
+    .sec-7.show-animate .images img {
+        transform: translateX(-100%); /* Ensure that the animation is applied on smaller screens */
+        transition-delay: calc(.5s * var(--i))
+    }
+}

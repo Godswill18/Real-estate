@@ -1,0 +1,10 @@
+/admin
+Username: admin
+Password: admin
+
+
+
+
+/login
+username: christine@mail.com OR howarda@mail.com OR carl@mail.com   ==> THERE ARE OTHERS TOO
+password: agent
